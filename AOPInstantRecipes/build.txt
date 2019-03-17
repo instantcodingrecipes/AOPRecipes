@@ -1,0 +1,5 @@
+javac -cp .;lib/aspectjrt-1.9.2.jar;lib/aspectjtools-1.9.2.jar -d bin src/main/java/com/build/WrapAjc.java
+
+java -cp ./bin;lib/aspectjrt-1.9.2.jar;lib/aspectjtools-1.9.2.jar com.build.WrapAjc -source 1.8 -target 1.8 -aspectpath src/main/java/com/aspects -sourceroots src/main/java -d ./bin -showWeaveInfo
+
+java -cp ./bin;lib/aspectjrt-1.9.2.jar; com.demo.AspectDemo
